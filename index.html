@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CodeShift: a coding keyboard and an SSH terminal for Android</title>
+<meta name="description" content="CodeShift makes two Android apps: a keyboard that switches between everyday typing and coding, and an SSH terminal with SFTP and a code editor. No ads, no tracking, no account.">
+<link rel="canonical" href="https://css.mygig.life/">
+<meta name="theme-color" content="#f4f5f7">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CodeShift">
+<meta property="og:title" content="CodeShift: a coding keyboard and an SSH terminal for Android">
+<meta property="og:description" content="One keyboard for everyday typing and writing code. One terminal for your own servers. No ads, no tracking, no account.">
+<meta property="og:url" content="https://css.mygig.life/">
+<meta property="og:image" content="https://css.mygig.life/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="CodeShift Keyboard in code mode next to the CodeShift Terminal editor">
+<meta name="twitter:card" content="summary_large_image">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preload" href="fonts/schibsted-grotesk-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/schibsted-grotesk-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="img/icon-keyboard-64.png" width="32" height="32" alt="">CodeShift</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#keyboard">Keyboard</a>
+      <a href="#terminal">Terminal</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#availability">Availability</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap hero__grid">
+    <div>
+      <h1 id="h1">Write code and run servers from your phone.</h1>
+      <p class="hero__lead">CodeShift is two Android apps. <strong>A keyboard</strong> that switches between everyday typing and coding, and <strong>an SSH terminal</strong> with file transfer and a code editor. No ads, no tracking, no account.</p>
+      <div class="entries">
+        <a class="entry" href="#keyboard">
+          <img src="img/icon-keyboard.png" width="64" height="64" alt="">
+          <h2>CodeShift Keyboard</h2>
+          <p>One keyboard for everyday typing and writing code.</p>
+          <p class="status">In closed testing on Google Play</p>
+        </a>
+        <a class="entry" href="#terminal">
+          <img src="img/icon-terminal.png" width="64" height="64" alt="">
+          <h2>CodeShift Terminal</h2>
+          <p>SSH terminal, SFTP and a code editor for your own servers.</p>
+          <p class="status">In closed testing on Google Play</p>
+        </a>
+      </div>
+    </div>
+    <div class="duo">
+      <div class="phone"><img src="img/kb-code.webp" width="640" height="1138" alt="CodeShift Keyboard in code mode on a phone, with Esc, Tab, Ctrl and Alt keys, arrow keys and symbols on every letter key, under a shell script"></div>
+      <div class="phone"><img src="img/tm-editor.webp" width="640" height="1422" alt="CodeShift Terminal editing a Python file with syntax highlighting, tabs and a row of code keys" loading="eager"></div>
+    </div>
+  </div>
+</section>
+
+<section id="keyboard" class="ruled" aria-labelledby="kb-h">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="kb-h">One keyboard. Two modes.</h2>
+      <p>Most people end up with one keyboard for chat and another for a terminal, and swap between them all day. CodeShift Keyboard puts both in one app. Tap one key to change mode, and it remembers your choice for each app.</p>
+    </div>
+
+    <div class="mode">
+      <input type="radio" name="mode" id="m-everyday" checked>
+      <input type="radio" name="mode" id="m-code">
+      <div class="mode__grid">
+        <fieldset class="switch">
+          <legend>Keyboard mode</legend>
+          <label for="m-everyday">Everyday</label>
+          <label for="m-code">Code</label>
+        </fieldset>
+        <div class="stage">
+          <div class="phone">
+            <img class="shot-everyday" src="img/kb-everyday.webp" width="640" height="1138" alt="The everyday keyboard: a number row, QWERTY letters with swipe symbols, a language key and an emoji key, with word suggestions above">
+            <img class="shot-code" src="img/kb-code.webp" width="640" height="1138" alt="The code keyboard: Esc, Tab, Ctrl, Alt and arrow keys, a row of Copy, Cut, Paste, All, Undo and Redo, and symbols on every letter key">
+          </div>
+        </div>
+        <div class="mode__text">
+          <div class="when when-everyday">
+            <h3>Everyday: a keyboard for people.</h3>
+            <p>A familiar QWERTY layout with word suggestions, autocorrect, glide typing, emoji and voice typing. English, Spanish and German.</p>
+            <ul class="changes">
+              <li><b>Suggestions</b><span>Next-word prediction that learns from you. Backspace undoes an autocorrect.</span></li>
+              <li><b>Glide typing</b><span>Slide across the letters to type a word.</span></li>
+              <li><b>Punctuation</b><span>Swipe a key for punctuation; press and hold for accents.</span></li>
+              <li><b>Emoji</b><span>Recents, skin tones and search.</span></li>
+            </ul>
+          </div>
+          <div class="when when-code">
+            <h3>Code: the keys a terminal needs.</h3>
+            <p>Esc, Tab, Ctrl and Alt stay on screen. Brackets, braces, pipes and digits sit one swipe away on the letter keys. Copy, paste and undo are one tap.</p>
+            <ul class="changes">
+              <li><b>Modifiers</b><span>Esc, Tab, Ctrl and Alt always visible. Ctrl and Alt combinations work in terminal apps such as Termux.</span></li>
+              <li><b>Movement</b><span>Arrow keys, with Home, End, PgUp and PgDn a swipe away.</span></li>
+              <li><b>Editing</b><span>Copy, Cut, Paste, Select all, Undo and Redo on one row.</span></li>
+              <li><b>Symbols</b><span>Swipe any key for a symbol or number. Press and hold for the choices.</span></li>
+            </ul>
+          </div>
+          <p class="howto"><strong>How to switch:</strong> tap <span class="mono">&lt;/&gt;</span> on the everyday keyboard to go to code mode, and <span class="mono">ABC</span> to come back. Use the two buttons here to compare them.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="band">
+      <div class="band__text">
+        <h3>Built for writing code on a phone.</h3>
+        <p class="band__lead">Code mode does more than add a row of symbols. It helps you keep your place and catch mistakes.</p>
+        <ul class="facts">
+          <li>The syntax checker flags a missing or extra bracket, or an unclosed quote or comment, in the bar above the keys. Tap to fix it.</li>
+          <li>Brackets and quotes close in pairs, and Enter auto-indents.</li>
+          <li>Press and hold a key to see its symbols in a popup, then slide to the one you want.</li>
+          <li>Command suggestions help you finish common coding and shell commands.</li>
+          <li>Layouts fit the screen: compact phone, unfolded phone with a numpad, and a full tablet layout with F1 to F12.</li>
+        </ul>
+      </div>
+      <div class="shot phone"><img src="img/kb-popup.webp" width="640" height="1138" alt="Code mode with the press-and-hold popup open on the K key, showing the opening and closing brace" loading="lazy"></div>
+    </div>
+
+    <div class="band band--flip">
+      <div class="band__text">
+        <h3>And a regular keyboard when you are not coding.</h3>
+        <p class="band__lead">Chat, email, search and notes use the everyday keyboard. It is not a stripped-down fallback.</p>
+        <ul class="facts">
+          <li>Word suggestions, autocorrect and next-word prediction that learn from what you type. Learning is switched off in incognito mode and in password fields.</li>
+          <li>Glide typing, auto-capitalise and double-space period.</li>
+          <li>Three languages with a language key: English, Spanish and German. German uses QWERTZ with ä, ö and ü keys.</li>
+          <li>Voice input from the microphone key, handed to Google voice typing.</li>
+          <li>Suggestions from your autofill service, such as logins and one-time codes, on Android 11 and up.</li>
+        </ul>
+      </div>
+      <div class="shot phone"><img src="img/kb-lang.webp" width="640" height="1138" alt="The everyday keyboard in German with QWERTZ letters and ä, ö and ü keys while adding a contact" loading="lazy"></div>
+    </div>
+
+    <h3 class="subhead">Clipboard and comfort</h3>
+    <div class="strip" role="group" aria-label="Clipboard and comfort screenshots" tabindex="0">
+      <figure>
+        <div class="phone"><img src="img/kb-clipboard.webp" width="640" height="1138" alt="Clipboard panel with Recent and Pinned tabs listing copied text" loading="lazy"></div>
+        <figcaption><b>Clipboard history and pins</b>A paste chip for what you just copied. Never kept from password fields or copies Android marks sensitive.</figcaption>
+      </figure>
+      <figure>
+        <div class="phone"><img src="img/kb-onehand.webp" width="640" height="1138" alt="One-handed mode with the keyboard shifted to one side and a thumb rail" loading="lazy"></div>
+        <figcaption><b>One-handed mode</b>Also adjustable key height, width and position.</figcaption>
+      </figure>
+      <figure>
+        <div class="phone"><img src="img/kb-light.webp" width="640" height="1138" alt="The keyboard in the light theme" loading="lazy"></div>
+        <figcaption><b>Themes</b>Dark, light, AMOLED black or follow the system. A high-contrast theme and large key text are included.</figcaption>
+      </figure>
+      <figure>
+        <div class="phone"><img src="img/kb-emoji.webp" width="640" height="1138" alt="Emoji panel with skin tone choices and a search key" loading="lazy"></div>
+        <figcaption><b>Emoji</b>Recents, skin tones and search.</figcaption>
+      </figure>
+    </div>
+    <p>TalkBack screen reader support. Back up and restore your settings, saved words and pins to a file you choose.</p>
+  </div>
+</section>
+
+<section id="terminal" class="night" aria-labelledby="tm-h">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="tm-h">An SSH terminal, file manager and editor for your own servers.</h2>
+      <p>CodeShift Terminal is for people who look after servers from a phone or tablet: connect, run a command, open a config file, fix it, upload a file. It is one app, so you are not hopping between a terminal, a file transfer tool and a text editor.</p>
+    </div>
+
+    <div class="t-grid">
+      <div class="t-cols">
+        <div>
+          <h3>Connect</h3>
+          <ul class="facts">
+            <li>Save as many hosts as you like, with search and sort.</li>
+            <li>Log in with a password or a key. Generate an ed25519 key on the phone, or import ed25519, RSA and ECDSA keys. Each key belongs to one host.</li>
+            <li>Jump hosts, local and remote port forwarding, and optional agent forwarding.</li>
+            <li>Import hosts from your <code>~/.ssh/config</code>.</li>
+            <li>You confirm a server's host key the first time, and you are warned if it changes.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Work</h3>
+          <ul class="facts">
+            <li>Several sessions at once, including more than one shell on the same server, in a dock you can minimise and restore.</li>
+            <li>An extra keys row: Esc, Tab, Ctrl, Alt, arrows and common symbols.</li>
+            <li>Earlier commands appear as you type. They are stored encrypted on the phone and can be switched off.</li>
+            <li>Snippets: save commands and send them to any session with one tap.</li>
+            <li>Six colour themes. Sessions keep running in the background, with a notification while they are open.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Edit</h3>
+          <ul class="facts">
+            <li>Open files on the server or on your phone, with syntax highlighting, search, undo and drafts.</li>
+            <li>Start the app in the editor, or reopen your last file, from Settings or an app shortcut.</li>
+            <li>A recent files list.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Transfer</h3>
+          <ul class="facts">
+            <li>Browse the server's folders over SFTP, upload and download, and cancel a transfer.</li>
+            <li>Choose what happens when a name already exists.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="t-shots">
+        <div class="phone"><img src="img/tm-session.webp" width="640" height="1422" alt="A live SSH session on a server running ls and cat, with command suggestions and an extra keys row above the keyboard" loading="lazy"></div>
+        <div class="phone"><img src="img/tm-files.webp" width="640" height="1422" alt="The file browser showing the server's home folder with a Phone and Server switch and an Upload files button" loading="lazy"></div>
+      </div>
+    </div>
+
+    <div class="strip" role="group" aria-label="More Terminal screenshots" tabindex="0">
+      <figure>
+        <div class="phone"><img src="img/tm-hosts.webp" width="640" height="1422" alt="The Hosts screen with a search box and saved servers, each with Terminal and Files buttons" loading="lazy"></div>
+        <figcaption><b>Hosts</b>Search, sort and connect with one tap.</figcaption>
+      </figure>
+      <figure>
+        <div class="phone"><img src="img/tm-sessions.webp" width="640" height="1422" alt="Two shells open on the same server as tabs at the top of the terminal" loading="lazy"></div>
+        <figcaption><b>Sessions</b>Two shells on one server, side by side as tabs.</figcaption>
+      </figure>
+      <figure>
+        <div class="phone"><img src="img/tm-tunnels.webp" width="640" height="1422" alt="The Forwarding screen listing port forwards and a jump host" loading="lazy"></div>
+        <figcaption><b>Tunnels</b>Port forwarding and jump hosts per host.</figcaption>
+      </figure>
+      <figure>
+        <div class="phone"><img src="img/tm-settings.webp" width="640" height="1422" alt="The Settings screen with Appearance, Terminal, Start screen, Security and Data and backup" loading="lazy"></div>
+        <figcaption><b>Settings</b>App lock, themes, backup and import.</figcaption>
+      </figure>
+    </div>
+
+    <p class="limits"><strong>What it does not do.</strong> You need your own SSH server; the app does not provide one. There is no Mosh and no cloud sync. Android may stop background apps on some phones, so keep the notification visible while a session is open.</p>
+  </div>
+</section>
+
+<section aria-labelledby="ph-h">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="ph-h">Two apps, one idea: less friction.</h2>
+      <p>Good developer tools get out of the way. These two apps stand alone, and you do not need both.</p>
+    </div>
+    <div class="pair">
+      <div>
+        <h3>The keyboard makes input easier.</h3>
+        <p>Typing code on glass is slow when every symbol is two taps away. The keyboard puts the keys you need within a swipe, and gives you a normal keyboard back when you stop coding.</p>
+      </div>
+      <div>
+        <h3>The terminal makes remote work easier.</h3>
+        <p>Looking after a server from a phone means a shell, a file browser and an editor. The terminal keeps all three in one place, with your hosts, keys and snippets saved on the device.</p>
+      </div>
+    </div>
+    <p class="after">They fit together: the terminal has its own extra keys row and works with any keyboard, and CodeShift Keyboard's code mode suits it well. Neither depends on the other.</p>
+  </div>
+</section>
+
+<section id="privacy" class="ruled" aria-labelledby="pv-h">
+  <div class="wrap">
+    <h2 id="pv-h" class="statement">Your data is your business. Not ours.</h2>
+    <p class="lede">We think software should collect only what it needs to do its job. These are the facts about each app, and the full policies are linked below.</p>
+    <div class="priv">
+      <div>
+        <h3>CodeShift Keyboard</h3>
+        <ul class="facts">
+          <li>It has no internet permission, so the keyboard itself cannot send what you type off the phone.</li>
+          <li>It asks Android for one permission: the microphone, only for its built-in voice engine.</li>
+          <li>No ads, no analytics, no crash-reporting service and no account. Android's cloud backup is off for it.</li>
+          <li>Learned words, pinned items and clipboard history stay in the app's private storage on the phone. Incognito mode stops all learning.</li>
+          <li>Voice typing is handled by Google voice typing or Android's speech service, which may use the internet. The keyboard never receives or stores the audio.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>CodeShift Terminal</h3>
+        <ul class="facts">
+          <li>It collects no data and has no account, ads or analytics. It connects only to the servers you add.</li>
+          <li>Saved hosts, passwords and keys are encrypted with the Android Keystore.</li>
+          <li>An app lock with fingerprint, face or screen lock is available.</li>
+          <li>Command history and snippets are stored encrypted on the phone. Backups are an encrypted file you choose, with no cloud.</li>
+          <li>Your connections use SSH. We do not run any server that your traffic passes through.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="policies">
+      <a href="https://codeshift.mygig.life/privacy/"><b>CodeShift Keyboard privacy policy</b><span>The full policy for the keyboard.</span></a>
+      <a href="https://codeshift.mygig.life/terminal/privacy/"><b>CodeShift Terminal privacy policy</b><span>The full policy for the terminal.</span></a>
+      <a href="https://codeshift.mygig.life/terms/"><b>CodeShift Keyboard terms of use</b><span>The terms for the keyboard.</span></a>
+      <a href="privacy/"><b>Which policy covers what</b><span>A short guide to the three documents above.</span></a>
+    </div>
+    <p class="after"><strong>This website</strong> sets no cookies, runs no analytics and loads no third-party scripts or fonts. Every file comes from this site. It is hosted on GitHub Pages, which keeps its own server logs, as any host does.</p>
+  </div>
+</section>
+
+<section id="availability" class="ruled" aria-labelledby="av-h">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="av-h">Where things stand.</h2>
+      <p>Neither app is publicly available yet. Both are in closed testing on Google Play.</p>
+    </div>
+    <div class="avail">
+      <dl>
+        <dt>CodeShift Keyboard</dt>
+        <dd><b>Status:</b> closed testing on Google Play.</dd>
+        <dd><b>Platform:</b> Android 7.0 or newer, on phones, foldables and tablets.</dd>
+        <dd><b>Price:</b> a one-time purchase, with no subscriptions or in-app purchases.</dd>
+        <dd><b>Languages:</b> English, Spanish and German.</dd>
+      </dl>
+      <dl>
+        <dt>CodeShift Terminal</dt>
+        <dd><b>Status:</b> closed testing on Google Play.</dd>
+        <dd><b>Platform:</b> Android 7.0 or newer, on phones, foldables and tablets.</dd>
+        <dd><b>Price:</b> a one-time purchase, with no subscriptions or in-app purchases.</dd>
+        <dd><b>You need:</b> your own SSH server.</dd>
+      </dl>
+    </div>
+    <p class="avail-note">To ask about testing access, email <a href="mailto:app.cs@mygig.life">app.cs@mygig.life</a>. Release dates and prices will be posted here when they are set.</p>
+  </div>
+</section>
+
+<section id="faq" class="ruled" aria-labelledby="fq-h">
+  <div class="wrap">
+    <div class="section-head"><h2 id="fq-h">Questions</h2></div>
+    <div class="faq">
+      <details><summary>What is CodeShift?</summary><div class="a"><p>CodeShift is a pair of Android apps for people who write code and manage servers on a phone: CodeShift Keyboard and CodeShift Terminal. They are separate apps from the same developer, mygig.life.</p></div></details>
+      <details><summary>How does mode switching work on the keyboard?</summary><div class="a"><p>Tap the <span class="mono">&lt;/&gt;</span> key to switch to code mode and <span class="mono">ABC</span> to switch back. The keyboard remembers the mode for each app, so a terminal app can stay in code mode while a messaging app stays in everyday mode.</p></div></details>
+      <details><summary>Can I use the keyboard for normal typing?</summary><div class="a"><p>Yes. The everyday mode is a full QWERTY keyboard with suggestions, autocorrect, glide typing, emoji and voice typing, in English, Spanish and German.</p></div></details>
+      <details><summary>What is CodeShift Terminal?</summary><div class="a"><p>An SSH terminal, an SFTP file manager and a code editor in one Android app. You connect to servers you already have, run commands, edit files on the server or on your phone, and move files between the two.</p></div></details>
+      <details><summary>Which platforms are supported?</summary><div class="a"><p>Android 7.0 and newer, on phones, foldables and tablets. There is no iPhone, desktop or web version.</p></div></details>
+      <details><summary>Are the apps free?</summary><div class="a"><p>No. Each is a one-time purchase, with no subscriptions, no in-app purchases and no ads. The prices will be set when each app is released.</p></div></details>
+      <details><summary>Does the Terminal support Mosh or cloud sync?</summary><div class="a"><p>No. It does not include Mosh, and there is no cloud sync. Your hosts, keys and snippets live on your device. You can move them to another phone with an encrypted backup file.</p></div></details>
+      <details><summary>How does CodeShift handle personal information?</summary><div class="a"><p>Neither app has ads, analytics or an account. The keyboard has no internet permission, and the terminal connects only to the servers you add. See the privacy section above for details.</p></div></details>
+      <details><summary>Where are the privacy policies?</summary><div class="a"><p>The keyboard policy is at <a href="https://codeshift.mygig.life/privacy/">codeshift.mygig.life/privacy</a>, and the terminal policy is at <a href="https://codeshift.mygig.life/terminal/privacy/">codeshift.mygig.life/terminal/privacy</a>. <a href="privacy/">This guide</a> explains which one covers which app.</p></div></details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <h2>CodeShift</h2>
+      <p class="legal">Android apps for typing code and working on servers, made by <a href="https://mygig.life">mygig.life</a>.</p>
+      <p class="legal copy">© 2026 myGIGlife INC.</p>
+    </div>
+    <div>
+      <h2>Apps</h2>
+      <ul>
+        <li><a href="#keyboard">CodeShift Keyboard</a></li>
+        <li><a href="#terminal">CodeShift Terminal</a></li>
+        <li><a href="#availability">Availability</a></li>
+        <li><a href="#faq">Questions</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Legal and contact</h2>
+      <ul>
+        <li><a href="https://codeshift.mygig.life/privacy/">Keyboard privacy policy</a></li>
+        <li><a href="https://codeshift.mygig.life/terminal/privacy/">Terminal privacy policy</a></li>
+        <li><a href="https://codeshift.mygig.life/terms/">Keyboard terms of use</a></li>
+        <li><a href="privacy/">Which policy covers what</a></li>
+        <li><a href="mailto:app.cs@mygig.life">app.cs@mygig.life</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
