@@ -99,7 +99,7 @@ A GitHub Pages site can have only one custom domain. `app-codeshift` already use
 
 - Semantic landmarks, one `h1` per page, a skip link, visible focus on every control, 48px minimum touch targets, real alt text, forced-colors support.
 - Automated WCAG 2.0 A/AA, 2.1 AA and 2.2 AA scan (axe-core) at 390 and 1440 on all pages: no violations. Automated scans do not replace a manual screen-reader pass.
-- No horizontal scrolling at 360, 390, 430, 768, 1024 and 1440.
+- No horizontal scrolling at 344 (foldable cover screen), 360, 390, 430, 640, 690 (unfolded foldable), 768, 820, 884, 1024 and 1440. The layout has steps at 560, 640 and 880 px so mid-size screens such as an unfolded Galaxy Z Fold use two columns instead of a stretched phone layout.
 - Images are WebP at 640px wide with width and height set, so nothing shifts. The only render-blocking assets are one stylesheet and two preloaded fonts.
 
 ## Growing the site

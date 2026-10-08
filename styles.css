@@ -218,12 +218,24 @@ th { font-weight: 600; border-bottom: 1px solid var(--ink); }
   .entry { grid-template-columns: 64px 1fr; }
   .entry img { width: 64px; height: 64px; }
 }
+@media (min-width: 640px) {
+  .hero__grid { grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: 32px; align-items: center; }
+  .hero h1 { font-size: clamp(2.3rem, 6.2vw, 4.7rem); }
+  .mode__grid { grid-template-columns: 260px minmax(0, 1fr); gap: 40px; align-items: start; }
+  .mode__grid .switch { grid-column: 1 / -1; justify-self: start; }
+  .stage { width: 260px; }
+  .band { grid-template-columns: minmax(0, 1fr) 250px; gap: 40px; }
+  .band--flip { grid-template-columns: 250px minmax(0, 1fr); }
+  .band--flip .band__text { order: 2; }
+  .t-cols { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .changes li { grid-template-columns: 7.5rem 1fr; gap: 14px; }
+}
 @media (min-width: 880px) {
   section { padding-block: 104px; }
   .hero { padding-block: 72px 88px; }
   .hero__grid { grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: 56px; align-items: center; }
   .mode__grid { grid-template-columns: 330px minmax(0, 1fr); gap: 72px; align-items: start; }
-  .mode__grid .switch { grid-column: 1 / -1; justify-self: start; }
+  .changes li { grid-template-columns: 9.5rem 1fr; gap: 12px; }
   .stage { width: 330px; }
   .band { grid-template-columns: minmax(0, 1fr) 300px; gap: 72px; margin-top: 96px; }
   .band--flip { grid-template-columns: 300px minmax(0, 1fr); }
