@@ -73,6 +73,10 @@ Pure CSS: two radio buttons with labels, styled as a segmented control. No JavaS
 - No forms and no email collection. Contact is a `mailto:` link to the existing app.cs@mygig.life.
 - The site is on GitHub Pages, which keeps its own server logs. The page says so.
 
+## Copy
+
+A full copy review on 2026-10-09 was applied: plain developer voice, complete sentences, product names instead of vague "it", American English, and no marketing filler. Where a suggested rewrite would have made a privacy claim less accurate, the accurate wording was kept: the keyboard asks for the microphone permission only if you use its built-in voice engine; clipboard history stays on the device until it expires or you clear it (it is saved, so "not saved permanently" would be wrong); SSH traffic goes straight to your server or through a jump host you configure.
+
 ## Legal pages
 
 The existing documents stay exactly where they are, served by the repository `myGIGlife-claude/app-codeshift` at `codeshift.mygig.life`:
