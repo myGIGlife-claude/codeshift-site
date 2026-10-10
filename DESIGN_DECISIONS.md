@@ -111,4 +111,5 @@ A GitHub Pages site can have only one custom domain. `app-codeshift` already use
 - Add `/keyboard/` and `/terminal/` pages when each app has enough to say; move the matching section out of the home page and keep a short teaser there. The stylesheet already has no page-specific selectors.
 - When an app is published, replace its "closed testing" line with a Google Play link.
 - Add sitemap entries and pages in `sitemap.xml`.
+- `.well-known/security.txt` expires 2027-09-30: renew it (RFC 9116 wants an expiry under a year) and keep `/security/` in sync.
 - Screenshots come from `docs/store/src/shot3-*.png` and `term-shot-*.png` in the app repository. Re-export them with Pillow at 640px wide.
