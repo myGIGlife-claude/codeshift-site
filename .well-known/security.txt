@@ -1,4 +1,4 @@
-Contact: mailto:app.cs@mygig.life
+Contact: mailto:apps@mygig.life
 Expires: 2027-09-30T23:59:59.000Z
 Preferred-Languages: en
 Canonical: https://css.mygig.life/.well-known/security.txt
